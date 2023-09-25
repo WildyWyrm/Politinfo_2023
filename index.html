@@ -9,25 +9,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body class="body-container">
 
-    <nav class="navbar justify-content-between p-2 navbar-container">
-        <div class="container">
-            <a class="navbar-brand navbar-logo d-flex align-items-center m-1" href="#">
-                <img src="/images/politinfo-logo.png" alt="Bootstrap" width="200px">
-            </a>
-            <div class="menu">
-                <a class="menu-link" href="#">CANDIDATOS</a>
-                <a class="menu-link" href="#">SOBRE NOSOTROS</a>
-                <a class="menu-link" href="comovotar.html">CÓMO VOTAR</a>
-                <a class="menu-link" href="InformacionUtil.html">INFORMACIÓN UTIL</a>
-            </div>
-            <div class="menu-btn">
-                <i class='bx bx-menu'></i>
-            </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <a href="index.html"><img src="/images/politinfo-logo.png" alt="logo"></a>
         </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item candidatos-responsive">
+                    <a class="nav-link enlace" href="#">CANDIDATOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="#">CÓMO VOTAR</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle enlace" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">CANDIDATOS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item enlace candidato" href="#">Javier Milei</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="#">Sergio Massa</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="#">Patricia Bullrich</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="#">Juan Schiaretti</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="#">Miriam Bregman</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item enlace candidato" href="#" style="font-weight: bold;">Ver todos</a>
+                        </li>
+                        <!-- <li><hr class="dropdown-divider"></li> #PARA DIVIDIR LOS CANDIDATOS CON UNA LINEA -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="#">INFORMACIÓN UTIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="#">SOBRE NOSOTROS</a>
+                </li>
+
+            </ul>
+        </div>
+
     </nav>
 
     <main class="main-container">
