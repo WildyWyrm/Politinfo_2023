@@ -1,0 +1,27 @@
+@import url("../css-styles.css");
+
+.navbar-container {
+    align-items: center !important;
+    background-color: #030617 !important;
+}
+
+.menu {
+    display: flex;
+    margin-right: 5rem;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu-btn {
+    cursor: pointer;
+    color: var(--claro);
+    font-size: 2rem;
+    display: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-size: 1rem;
+    font-weight: 500;
+}
