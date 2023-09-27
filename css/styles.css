@@ -1,5 +1,6 @@
 @import url(/css/navbar.css);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url(footer.css);
 
 :root {
     --max-width: 1200px;
@@ -123,25 +124,4 @@
 .party-img {
     width: 100%;
     height: auto;
-}
-
-
-/* #### FOOTER #### */
-
-.footer-container {
-    margin-top: 150px;
-    color: var(--claro);
-}
-
-.footer-2 h1 {
-    color: var(--gold);
-    font-weight: 600;
-}
-
-.contact-number a, .about-us a, .location a {
-    color: var(--claro);
-}
-
-.footer-1, .footer-3 {
-    background-color: var(--dark-blue);
 }

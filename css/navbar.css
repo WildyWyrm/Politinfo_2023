@@ -109,7 +109,7 @@ nav>div>a>img {
 
 
 .nav-link {
-  color: var(--claro);
+  color: var(--claro) !important;
 }
 
 .navbar-toggler {
@@ -135,6 +135,7 @@ nav>div>a>img {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 nav>div {
   margin-left: 0.5rem;
 }
@@ -143,11 +144,11 @@ nav>div {
   display: initial;
 }
 
-.candidatos-responsive{
-  display:none;
+.candidatos-responsive {
+  display: none;
 }
 
-.dropdown-divider{
+.dropdown-divider {
   border-top: 2px solid var(--gold);
   box-shadow: 0.5px 0.5px 0.5px 0px var(--oscuro);
 }
@@ -170,11 +171,12 @@ nav>div {
     right: -50px;
   }
 
-  .dropdown{
-    display:none;
+  .dropdown {
+    display: none;
   }
-  .candidatos-responsive{
-    display:block;
+
+  .candidatos-responsive {
+    display: block;
   }
 
   .enlace {
@@ -195,22 +197,23 @@ nav>div {
   }
 
   /* ..... */
-  .dropdown-menu ul li{ 
+  .dropdown-menu ul li {
     margin-left: auto;
     padding-right: 0.5rem;
     position: relative;
     transform: none;
-  
-   
+
+
   }
-  .dropdown-menu{
+
+  .dropdown-menu {
     margin-left: auto;
     padding-right: 0.6rem;
     text-align: end;
     --bs-dropdown-bg: var(--nav);
-    width:max-content;
-    }
-  
+    width: max-content;
+  }
+
 
   .menu.activo {
     opacity: 1;
@@ -232,7 +235,7 @@ nav>div {
     overflow: hidden;
     --bs-navbar-active-color: var(--claro);
   }
-  
+
   /* .enlace:before {
     content: "";
     position: absolute;
@@ -249,8 +252,8 @@ nav>div {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   } */
-  .dropdown-menu::before{
-  
+  .dropdown-menu::before {
+
     content: "";
     position: absolute;
     top: 0;
@@ -259,27 +262,27 @@ nav>div {
     height: 100%;
     background: var(--gold);
     /* transition: width 0.3s ease-out; */
-}
+  }
 
-.dropdown-menu ul li{
-position: relative;
+  .dropdown-menu ul li {
+    position: relative;
     list-style: none;
     margin: 10px 0;
-}
-  
+  }
+
   .enlace:hover,
   .enlace:focus,
   .enlace:active {
     color: var(--gold);
   }
-  
+
   .candidato:hover,
   .candidato:focus,
   .candidato:active {
     color: var(--nav);
   }
-  
-  
+
+
   .enlace:hover:before,
   .enlace:focus:before,
   .enlace:active:before {
@@ -292,4 +295,3 @@ position: relative;
 
 
 }
-
