@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+:root {
+    --max-width: 1200px;
+    --color-primario: #1976D2;
+    --claro: #f6f6f9;
+    --rich-black: #030617;
+    --gold: #FFD601;
+    --black: #000000;
+
+
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
+}
+
+body {
+    background:
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+        repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c) !important;
+    background-attachment: fixed;
+}
+
+.card-container {
+    width: 75vw;
+    margin-top: 3rem;
+    background-color: #FFD601;
+}
+
+.img-hw {
+    height: 11rem;
+    width: 11rem;
+}
+
+.img-hw2 {
+    height: 8rem;
+    width: 8rem;
+}
+
+.number {
+    height: 5rem;
+    width: 5rem;
+}
+
+.card-container__div {
+    background-color: #FFD601;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0919ec;
+}
+
+.howToVote-h5,
+.howToVote-p {
+    padding: 0 15%;
+    color: black;
+}
+
+.howToVote-p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width : 476px) {
+    .img-hw {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .img-hw2 {
+        height: 4rem;
+        width: 4rem;
+    }
+}
