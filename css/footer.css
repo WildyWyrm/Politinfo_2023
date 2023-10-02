@@ -1,0 +1,30 @@
+.footer-container {
+    margin-top: 150px;
+    color: var(--claro);
+}
+
+.footer-2 h2 {
+    color: var(--gold);
+    font-size: 50px;
+    font-weight: 620 !important;
+}
+
+.contact-number a, .about-us a, .location a {
+    color: var(--claro);
+}
+
+.footer-1, .footer-3 {
+    background-color: var(--dark-blue);
+}
+
+/* Cuando el display sea de Mobile, cambiar el H2 por una imagen del logo simplemente: */ 
+
+@media screen and (max-width: 768px) {
+    .footer-2 h2 {
+        display: none;
+    }
+    .footer-2 img {
+        display: block !important;
+        margin: 0 20px !important;
+    }
+}
