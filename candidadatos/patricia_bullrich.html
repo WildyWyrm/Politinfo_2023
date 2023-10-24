@@ -4,60 +4,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patricia Bullrich --- Información</title>
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/candidatos.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
+    <title>Politinfo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/candidato.css">
 </head>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">
-        <a href="/index.html"><img src="/images/politinfo-logo.png" alt="logo"></a>
-    </div>
-    <div class="menu">
-        <a class="enlace" href="#">CANDIDATOS</a>
-        <a class="enlace" href="#">SOBRE NOSOTROS</a>
-        <a class="enlace" href="/comovotar.html">CÓMO VOTAR</a>
-        <a class="enlace" href="/InformacionUtil.html">INFORMACIÓN UTIL</a>
-    </div>
-    <div class="menu-btn">
-        <i class='bx bx-menu'></i>
-    </div>
-</nav>
 
+<body class="body-container">
 
-<body>
-    <div class="contenedor">
-        <div class="infopartido">
-            <h2 class="titulo-candidato">JUNTOS POR EL CAMBIO</h2>
-            <div class="presentacion">
-                <div class="partido">
-                    <img class="partido-img" src="/images/Partidos/JuntosPorElCambio.png" alt="partido">
+    <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <a href="../index.html"><img src="/images/politinfo-logo.png" alt="logo"></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item candidatos-responsive">
+                    <a class="nav-link enlace" href="#">CANDIDATOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="../comoVotar.html">CÓMO VOTAR</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle enlace" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">CANDIDATOS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item enlace candidato" href="javier_milei.html">Javier Milei</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="sergio_massa.html">Sergio Massa</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="patricia_bullrich.html">Patricia Bullrich</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="juan_schiaretti.html">Juan Schiaretti</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="miriam_bregman.html">Miriam Bregman</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item enlace candidato" href="showAll.html" style="font-weight: bold;">Ver todos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="../InformacionUtil.html">INFORMACIÓN UTIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="../SobreNosotros.html">SOBRE NOSOTROS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 
+        CANDIDATE 1
+     -->
+     <header class="container-sm">
+          <section class="row align-items-lg-center">
+            <img src="../images/Politicos/Bullrich/bullrich-removebg-preview.png" class="candidate-card col-12 col-lg-5 img-fluid rounded-circle"  
+                alt="Milei Imagen">
+            <ul class="list-group list-group-flush col-12 col-lg-7" style="border-radius: 10px;">
+              <li class="list-group-item" style="margin-bottom: 0px;">Nombre: Patricia Bullrich</li>
+              <li class="list-group-item">Edad: 67 años</li>
+              <li class="list-group-item">Partido: Juntos por el cambio</li>
+            </ul>
+          </section>
+      </header>
+
+      <main class="container-sm">
+        <h2 class="titulo-util text-center my-5 text-light">Historia profesional</h2>
+        <section class="row rounded">
+          <article class="col-12 col-lg-2 ">
+            <h3 class="text-white">2019-2023</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Presidenta de Pro</h3>
+            <p class="text-light">
+              Macri la eligió presidenta de Pro tras ser derrotado en las elecciones de 2019. Con esa plataforma, Bullrich recorrió el país, impulsó marchas contra las restricciones por la pandemia y construyó su candidatura a presidenta. Este año pidió licencia por la campaña con el argumento de que no quería que se confundiera "la institucionalidad partidaria" con su precandidatura.</p>
+          </article>
+          <br>
+          <article class="col-12 col-lg-2">
+            <h3 class="text-white">2015-2019</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Ministra de Seguridad de la Nación</h3>
+            <p class="text-light">
+              Su gestión arrancó con un papelón que casi le cuesta el cargo: el fallido anuncio de la detención de los prófugos del caso del triple crimen. Furioso, Mauricio Macri le dió un ultimátum en Olivos, pero no le aceptó la renuncia. Bullrich se posicionó como la abanderada de la mano dura. Enfocó su gestión en el combate del narcotráfico -logró una reducción del 30% de los homicidios en Rosario- y tuvo una relación tirante con su número dos: Eugenio Burzaco. Defendió al policía José Chocobar, condenado por matar a un delincuente en 2007, e impulsó la modificación del protocolo para el uso de armas de fuego para fuerzas de seguridad, por la que brotaron acusaciones de violación a los derechos humanos. Atravesó un vendaval político por el caso Maldonado. De arranque, defendió el accionar de la Gendarmería y resistió la presión de los organismos de DD.HH. y la oposición ante las denuncias por la desaparición del joven. También enfrentó el conflicto con los mapuches en Villa Mascardi. Pese a las críticas, se retiró del cargo con altos niveles de aprobación.</p>
+          </article>
+          <article class="col-12 col-lg-2">
+            <h3 class="text-white">2007-2015</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Diputada nacional</h3>
+            <p class="text-light">
+              Tuvo momentos de alta exposición como diputada, sobre todo, tras la derrota oficialista de 2009, cuando lideró el armado del “Grupo A”, el frente de opositores que le arrebató al kirchnerismo el control de la mayoría de las comisiones y logró una victoria simbólica en el recinto: la aprobación de la ley del 82% móvil para los jubilados. Ante las irregularidades en el Indec, motorizó el “IPC Congreso”, con relevamientos de la inflación de consultoras privadas. También promovió un pedido de juicio político a Amado Boudou por el caso Ciccone y, al frente de la Comisión de Legislación Penal, citó a Alberto Nisman al Congreso tras la denuncia contra Cristina Kirchner por encubrimiento a Irán.</p>
+          </article>
+          <article class="col-12 col-lg-2">
+            <h3 class="text-white">2001</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Ministra de Seguridad Social</h3>
+            <p class="text-light">
+              Bullrich llegó a este ministerio en plena pelea con el gremialismo, por un enroque de nombres en el gabinete Fernando de la Rúa, que la corrió de Trabajo. Duró menos de un mes en el nuevo puesto. Renunció por la falta de apoyo del presidente en su pelea con los ministros José Gabriel Dumón y Daniel Sartor, con quienes disputaba el manejo de planes sociales y tenía diferencias sobre la posición del gobierno frente a los sindicatos. Se fue del Ejecutivo pocas semanas antes del estallido social que provoca el “corralito”.</p>
+          </article>
+          <article class="col-12 col-lg-2 ">
+            <h3 class="text-white">2000-2001</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Ministra de Trabajo, Empleo y Formación de Recursos Humanos</h3>
+            <p class="text-light">
+              Asumió en reemplazo de Alberto Flamarique, uno de los apuntados por el caso de los sobornos. En medio de un clima enrarecido por la espiral de la crisis, Bullrich se enfrentó a los sindicalistas cuando decidió el fin de la llamada ultraactividad de los convenios laborales y les reclamó que exhibieran sus declaraciones juradas. Lidió con una ola de paros y las críticas por el desempleo, que se disparó por la recesión. Defensora de la política de déficit cero, Bullrich, junto a Cavallo y De la Rúa, implementó el ajuste del 13% a las jubilaciones y sueldos de estatales.</p>
+          </article>
+          <article class="col-12 col-lg-2">
+            <h3 class="text-white">1999-2000</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Ministerio de Justicia y Derechos Humanos. Secretaria de Política Criminal y Asuntos Penitenciarios</h3>
+            <p class="text-light">
+              De la Rúa nombró a Bullrich bajo las órdenes del ministro Ricardo Gil Lavedra. Ambos enfrentaron una crisis penitenciaria y relevaron a los jefes de las cárceles nacionales ante denuncias por connivencia con presos. Bullrich acusó al menemismo de pagar sobreprecios en contratos para construir los penales de Ezeiza y Marcos Paz. En octubre de 2000, tras el escándalo por el pago de coimas en el Senado durante la sanción de la reforma laboral, De la Rúa implementó una profunda reestructuración de su Gabinete. De forma sorpresiva, desplazó a Gil Lavedra y promovió a Bullrich como ministra de Trabajo.</p>
+          </article><article class="col-12 col-lg-2 ">
+            <h3 class="text-white">1998</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Ministerio de Justicia y Seguridad de la provincia de Buenos Aires. Subsecretaria de Relaciones con la Comunidad</h3>
+            <p class="text-light">
+              Tuvo un paso fugaz como subsecretaria bonaerense, nombrada por León Arslanian, ministro de Justicia y Seguridad de la provincia. Ante la conmoción por el crimen de José Luis Cabezas, Duhalde le había encargado a Arslanian implementar una profunda reforma policial. Tres meses después de su nombramiento, Bullrich renunció por diferencias con Álvarez, a quien secundaba. Su salida provocó revuelo en el duhaldismo. Le reprocharon su alto perfil público o su accionar independiente y hasta la acusaron de “espiar” proyectos. En el entorno de Bullrich, en cambio, dijeron que fue desplazada por las presiones de Menem./p>
+          </article>
+          <article class="col-12 col-lg-2">
+            <h3 class="text-white">1993-1997</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Diputada nacional (por el PJ)</h3>
+            <p class="text-light">
+              En las legislativas de 1993, Bullrich, ya convertida en una férrea opositora de Carlos Grosso en la interna del PJ porteño, fue electa diputada como parte de la lista del menemismo en la ciudad, que encabezó Erman González. La orden llegó desde la quinta de Olivos. “Que vaya Patricia”, sentenció Carlos Menem, pese a las dudas de sus armadores. Casi tres años después, se distanció del PJ. Advirtió sobre falta de transparencia en el bloque oficialista y denunció negocios del empresario Alfredo Yabrán, enemigo de Domingo Cavallo. Al romper con Menem se alió con Gustavo Beliz y Jorge Argüello, otros disidentes del PJ.</p>
+          </article>
+          <article class="col-12 col-lg-2 ">
+            <h3 class="text-white">1973-1977</h3></article>
+          <article class="col-12 col-lg-10 border-start">
+            <h3 class="text-warning">Juventud Peronista</h3>
+            <p class="text-light">
+              En los ’70 militó en la Juventud Peronista, una agrupación con estrechos vínculos con Montoneros. Ella niega que haya formado parte de Montoneros, pero sí tenía relación con Rodolfo Galimberti, dirigente de esa agrupación, que fue pareja de su hermana fallecida.</p>
+          </article>
+        </section>
+        <h2 class="titulo-util text-center my-5 text-light">Propuestas</h2>
+          <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Economía
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Programa integral(Plan Israel)</li>
+                    <li>Reducción del gasto público</li>
+                    <li>Apertura económica</li>
+                    <li>Tener equilibrio en las cuentas y un Banco Central autónomo</li>
+                    <li>Establecer un nuevo régimen cambiario, consolidar el bimonetarismo.</li>
+                  </ul>
                 </div>
-                <p>Juntos por el Cambio​ (abreviado como JxC o Juntos) es una coalición política argentina, siendo
-                    también una ampliación de la alianza Cambiemos, que ganó las elecciones presidenciales en 2015.
-                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Educación
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Declarar la educación servicio esencial para evitar paros docentes</li>
+                    <li>Impulsar un Programa Nacional de Alfabetización y evaluar sus resultados</li>
+                    <li>Modernizar el sistema universitario.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Derechos humanos y convivencia democrática
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Celebrar un acuerdo federal por la transparencia como requisito para la asignación de recursos del Estado.</li>
+                    <li>Garantizar la participación ciudadana en el control del Estado a través del acceso online a toda la información pública.</li>
+                    <li>Reprimir vuelgas y cortes sindicales</li>
+                    <li>Cumplimiento de los compromisos asumidos con la comunidad internacional</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Seguridad
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Combatir el narcotráfico y el crimen organizado</li>
+                    <li>Cambiar la imputabilidad a 14 años</li>
+                    <li>Asegurar el bienestar del personal de Fuerzas Policiales y de Seguridad y protegerlos frente a abusos judiciales.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Trabajo y producción
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Impulsar medidas para los trabajadores informales.</li>
+                    <li>Reducir los costos laborales no salariales y terminar con la industria del juicio</li>
+                    <li>Modernizar el régimen laboral</li>
+                    <li>Combatir los paros sindicales</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Desarrollo humano, vivienda y protección del ambiente
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-light">
+                <ul>
+                  <li>Establecer un plan integral de salud materno infantil.</li>
+                  <li>Cumplir con el acuerdo de París sobre el Cambio Climático para la reducción de las emisiones de gases de efecto invernadero.</li>
+                  <li>Asegurar a los profesionales de la salud una remuneración acorde a sus responsabilidades y promover su capacitación continua.</li>
+                  <li>Incrementar la producción de energías renovables y minerales para la transición energética.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+        <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1 d-flex justify-content-between p-2 px-3">
+                <div class="follow-us-text">SEGUINOS EN NUESTRAS REDES:</div>
+                <div class="social-medias">
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook-square'></i>
+                </div>
+            </div>
+
+
+            <div class="footer-2 d-flex justify-content-evenly p-3">
+                <address class="footer-item">
+                    <b>PÁGINAS DE INTERÉS</b>
+                    <hr>
+                    <div class="about-us">
+                        <i class='bx bx-info-circle'></i> <a class="text-decoration-none" href="#">Sobre
+                            Nosotros</a>
+                    </div>
+                    <div class="location">
+                        <i class='bx bx-question-mark'></i> <a class="text-decoration-none" href="#">Información
+                            Útil</a> <br>
+                        <i class='bx bxs-map'></i> <a class="text-decoration-none" href="#">Cómo votar</a> <br>
+                    </div>
+                </address>
+                <div class="footer-2-title my-auto">
+                    <h1>POLITINFO</h1>
+                </div>
+                <address class="footer-item">
+                    <b>CONTACTO</b>
+                    <hr>
+                    <div class="contact-number">
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/tisiotti/">Bruno Tisiotti</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/elio-molas-dev/">Elio Molas</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/jaime-maria-lucia/">Lucia Jaime</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/brian-basabe/">Brian Basabe</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/fernando-e-montiel/">Fernando Montiel</a> <br>
+                    </div>
+                </address>
+            </div>
+
+
+            <div class="footer-3 d-flex align-items-center justify-content-center p-2">
+                <h5 class="m-0 fs-6">© 2023 POLITINFO - Todos los derechos reservados.</h5>
             </div>
         </div>
-        <h2 class="titulo-candidato">PATRICIA BULLRICH</h2>
-        <p>Patricia Bullrich, nacida en Buenos Aires el 11 de junio de 1956, fue ministra de Seguridad de la Nación
-            (2015-2019); diputada nacional por la Ciudad Autónoma de Buenos Aires (2007-2015) y (1993-1997); ministra de
-            Trabajo (2000-2001); ministra de Seguridad Social (2001); y secretaria de Política Criminal (1999-2000).</p>
-        <div class="carta-candidato">
-            <img class="candidato" src="/images/Politicos/Bullrich/bullrich-removebg-preview.png" alt="candidato">
-            <div class="redes">
-                <a href="https://www.instagram.com/patobullrich/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://twitter.com/PatoBullrich" target="_blank"><i class='bx bxl-twitter'></i></a>
-            </div>
-        </div>
+    </footer>
 
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-<script src="js/navbar.js"></script>
-<script src="js/carrousel.js"></script>
 
 </html>

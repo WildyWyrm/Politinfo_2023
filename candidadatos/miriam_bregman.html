@@ -4,66 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miriam Bregman --- Información</title>
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/candidatos.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
+    <title>Politinfo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/candidato.css">
 </head>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">
-        <a href="/index.html"><img src="/images/politinfo-logo.png" alt="logo"></a>
-    </div>
-    <div class="menu">
-        <a class="enlace" href="#">CANDIDATOS</a>
-        <a class="enlace" href="#">SOBRE NOSOTROS</a>
-        <a class="enlace" href="/comovotar.html">CÓMO VOTAR</a>
-        <a class="enlace" href="/InformacionUtil.html">INFORMACIÓN UTIL</a>
-    </div>
-    <div class="menu-btn">
-        <i class='bx bx-menu'></i>
-    </div>
-</nav>
 
+<body class="body-container">
 
-<body>
-    <div class="contenedor">
-        <div class="infopartido">
-            <h2 class="titulo-candidato">FRENTE DE IZQUIERDA Y LOS TRABAJADORES</h2>
-            <div class="presentacion">
-                <div class="partido">
-                    <img class="partido-img" src="/images/Partidos/FrenteDeIzquierda.png" alt="partido">
+    <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <a href="../index.html"><img src="/images/politinfo-logo.png" alt="logo"></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item candidatos-responsive">
+                    <a class="nav-link enlace" href="#">CANDIDATOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="../comoVotar.html">CÓMO VOTAR</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle enlace" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">CANDIDATOS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item enlace candidato" href="javier_milei.html">Javier Milei</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="sergio_massa.html">Sergio Massa</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="patricia_bullrich.html">Patricia Bullrich</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="juan_schiaretti.html">Juan Schiaretti</a></li>
+                        <li><a class="dropdown-item enlace candidato" href="miriam_bregman.html">Miriam Bregman</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item enlace candidato" href="showAll.html" style="font-weight: bold;">Ver todos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="../InformacionUtil.html">INFORMACIÓN UTIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace " href="../SobreNosotros.html">SOBRE NOSOTROS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 
+        CANDIDATE 1
+     -->
+     <header class="container-sm">
+          <section class="row align-items-lg-center">
+            <img src="../images/Politicos/Bregman/img-20230527-wa0021-removebg-preview.png" class="candidate-card col-12 col-lg-5 img-fluid rounded-circle"  
+                alt="Milei Imagen">
+            <ul class="list-group list-group-flush col-12 col-lg-7" style="border-radius: 10px;">
+              <li class="list-group-item" style="margin-bottom: 0px;">Nombre:Myriam Bregman</li>
+              <li class="list-group-item">Edad: 51 años</li>
+              <li class="list-group-item">Partido: Frente de izquierda y de trabajadores</li>
+            </ul>
+          </section>
+      </header>
+
+      <main class="container-sm">
+        <h2 class="titulo-util text-center my-5 text-light">Historia profesional</h2>
+        <section class="row rounded">
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">2019-2023</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Gobernador de Córdoba</h3>
+            <p class="text-light">
+              Juan Schiaretti logró su reelección con una diferencia histórica de 36 puntos sobre el segundo, el radical Mario Negri. El frente encabezado por el peronismo logró además arrebatarle al radicalismo la ciudad capital, un histórico bastión de ese partido, que compitió dividido en las elecciones. En su discurso de celebración de la victoria dijo: "No queremos la grieta, que tanto daño le hace a la Argentina". Ese mismo día planteó que seguiría gobernando con el modelo “cordobés”, que establece que “primero hay que tener equilibrio fiscal. Si los gobiernos no tienen equilibrio fiscal, las sociedades entran en dificultades"</p>
+          </article>
+          <br>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">2015-2019</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Gobernador de Córdoba</h3>
+            <p class="text-light">
+              Ganó las elecciones provinciales con el 38,89% de los votos contra el 33,93% del candidato de Juntos por Córdoba, el radical Oscar Aguad. Sucedió a su socio político, José Manuel de la Sota. "Vamos por las obras que dijimos que ibamos a hacer para que Córdoba se consolide como polo productivo orientado al Mercosur -señaló-. Córdoba no es una isla, sufre lo que le pasa a la patria argentina". Su compañero de fórmula fue Martín Llaryora, quien en 2019 ganó la intendencia de la ciudad de Córdoba y en 2023 la gobernación.</p>
+          </article>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">2013-2015</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Diputado nacional</h3>
+            <p class="text-light">
+              En las elecciones legislativas de 2013 Schiaretti ganó una banca como diputado nacional con Unión por Córdoba, fuerza que alcanzó el 29,8 % de los voto frente al 22,8% de la UCR. Renunció dos años después para asumir su segundo mandato como gobernador de Córdoba.</p>
+          </article>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">2007-2011</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Gobernador de Córdoba</h3>
+            <p class="text-light">
+              Gana por un punto la elección a gobernador a Luis Juez, quien denunció “fraude”. "Hemos triunfado legítimamente y limpiamente por 17 mil votos de diferencia", declaró esa madrugada. Elegido por José Manuel de la Sota para sucederlo, sostuvo que se trataba de "un triunfo del gobierno del presidente (Néstor) Kirchner". Terminó enfrentado con el kirchnerismo cuando apoyó los reclamos del campo por “la 125”. A partir de ahí se abrió un conflicto por la Nación por el giro de fondos para sostener la Caja de Jubilaciones provinciales, no transferida al Estado central.</p>
+          </article>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">2003-2007</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Vicegobernador de Córdoba</h3>
+            <p class="text-light">
+              Acompañó a José Manuel de la Sota en la gestión.</p>
+          </article>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">2002-2003</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Ministro de Finanzas Córdoba</h3>
+            <p class="text-light">
+              Ocupó el cargo designado por el gobernador José Manuel de la Sota, que después lo llevó como su compañero de fórmula.</p>
+          </article><article class="col-12 col-lg-4">
+            <h3 class="text-white">1999-2001</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Ministro de la Producción Córdoba</h3>
+            <p class="text-light">
+              Fue designado por el gobernador José Manuel de la Sota; ejerció el cargo hasta el 2001, cuando fue nuevamente elegido diputado nacional.</p>
+          </article>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">1993-1995</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Interventor federal de Santiago del Estero</h3>
+            <p class="text-light">
+              Schiaretti había sido electo diputado nacional el 3 de octubre de 1993 como cabeza de lista del Partido Justicialista, pero luego de la revuelta popular en Santiago del Estero del 16 de diciembre de 1993, el presidente Carlos Menem lo designa interventor en la provincia.</p>
+          </article>
+          <article class="col-12 col-lg-4">
+            <h3 class="text-white">1991-1993</h3></article>
+          <article class="col-12 col-lg-8 border-start">
+            <h3 class="text-warning">Secretario de Industria de la Nación</h3>
+            <p class="text-light">Secretario de Industria de la Nación
+              Integró el equipo de Economía del ministro Domingo Cavallo; antes lo había acompañado como subsecretario de Integración Latinoamericana en el Ministerio de Relaciones Internacionales y Culto.</p>
+          </article>
+        </section>
+        <h2 class="titulo-util text-center my-5 text-light">Propuestas</h2>
+          <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Economía
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Programa integral</li>
+                    <li>Rediscucion con el FMI</li>
+                  </ul>
                 </div>
-                <p>El Frente de Izquierda y de Trabajadores-Unidad (FIT-U) es una coalición electoral argentina de
-                    izquierda.
-                    Conformado con vistas a las elecciones presidenciales de 2011, está integrado por el Partido de los
-                    Trabajadores Socialistas, el Partido Obrero e Izquierda Socialista.
-                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Educación
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Educación sexual integral obligatoria</li>
+                    <li>Garantizar educación publica gratuita y de calidad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Derechos humanos y convivencia democrática
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Defender el derecho a las protestas</li>
+                    <li>Continuidad de las políticas de memoria, verdad y justicia</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Seguridad
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Nacionalizar los puertos</li>
+                    <li>Derogar las legilaciones que permiten el blanqueo y el lavado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Trabajo y producción
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-light">
+                  <ul>
+                    <li>Reduccion de jornada laboral</li>
+                    <li>Repartir horas con personas sin trabajo</li>
+                    <li>Aumentar salarios y jubilaciones </li>
+                    <li>Anular la reforma previsional.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                Desarrollo humano, vivienda y protección del ambiente
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-light">
+                <ul>
+                  <li>Programa de trransicion energetica</li>
+                  <li>Estatización de los recursos naturales</li>
+                  <li>Ley de hhumedales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+        <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1 d-flex justify-content-between p-2 px-3">
+                <div class="follow-us-text">SEGUINOS EN NUESTRAS REDES:</div>
+                <div class="social-medias">
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook-square'></i>
+                </div>
+            </div>
+
+
+            <div class="footer-2 d-flex justify-content-evenly p-3">
+                <address class="footer-item">
+                    <b>PÁGINAS DE INTERÉS</b>
+                    <hr>
+                    <div class="about-us">
+                        <i class='bx bx-info-circle'></i> <a class="text-decoration-none" href="#">Sobre
+                            Nosotros</a>
+                    </div>
+                    <div class="location">
+                        <i class='bx bx-question-mark'></i> <a class="text-decoration-none" href="#">Información
+                            Útil</a> <br>
+                        <i class='bx bxs-map'></i> <a class="text-decoration-none" href="#">Cómo votar</a> <br>
+                    </div>
+                </address>
+                <div class="footer-2-title my-auto">
+                    <h1>POLITINFO</h1>
+                </div>
+                <address class="footer-item">
+                    <b>CONTACTO</b>
+                    <hr>
+                    <div class="contact-number">
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/tisiotti/">Bruno Tisiotti</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/elio-molas-dev/">Elio Molas</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/jaime-maria-lucia/">Lucia Jaime</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/brian-basabe/">Brian Basabe</a> <br>
+                        <i class='bx bxl-linkedin-square'></i> <a class="text-decoration-none"
+                            href="https://www.linkedin.com/in/fernando-e-montiel/">Fernando Montiel</a> <br>
+                    </div>
+                </address>
+            </div>
+
+
+            <div class="footer-3 d-flex align-items-center justify-content-center p-2">
+                <h5 class="m-0 fs-6">© 2023 POLITINFO - Todos los derechos reservados.</h5>
             </div>
         </div>
-        <h2 class="titulo-candidato">MIRIAM BREGMAN</h2>
-        <p>Myriam Teresa Bregman, nacida en Timote, Buenos Aires el 25 de febrero de 1972, es una abogada, activista y
-            política argentina. Es dirigente nacional del Partido de los Trabajadores Socialistas (PTS). Fue diputada
-            nacional por la provincia de Buenos Aires (2015-2016); candidata a vicepresidenta de la Nación Argentina por
-            el Frente de Izquierda y de Trabajadores - Unidad en las elecciones de 2015; legisladora de la Ciudad
-            Autónoma de Buenos Aires (2017-2021) y nuevamente diputada nacional desde diciembre de 2021.
-        </p>
-        <div class="carta-candidato">
-            <img class="candidato" src="/images/Politicos/Bregman/img-20230527-wa0021-removebg-preview.png"
-                alt="candidato">
-            <div class="redes">
-                <a href="https://www.instagram.com/myriambregman/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://twitter.com/myriambregman" target="_blank"><i class='bx bxl-twitter'></i></a>
-            </div>
-        </div>
+    </footer>
 
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-<script src="js/navbar.js"></script>
-<script src="js/carrousel.js"></script>
 
 </html>
