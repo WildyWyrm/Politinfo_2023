@@ -1,0 +1,16 @@
+.list-group-item {
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: #494747;
+  color: #ffffff;
+}
+
+.btn{
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: solid 0.5px var(--nav);
+}
+
+.accordion-body{
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
