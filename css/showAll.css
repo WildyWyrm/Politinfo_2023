@@ -1,0 +1,74 @@
+/* Queda este CSS para agregar posteriormente. Por ahora queda funcionando el Style en el html de showAll*/
+.list-group-item {
+    font-weight: bold;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: #494747;
+    color: #ffffff;
+}
+
+
+.candidate-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -40px 36px -28px inset;
+    background-color: var(--gold);
+}
+
+.proposal-btn {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, var(--gold), #db700b);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+}
+
+.button-42:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.card {
+    padding-top: 1.5%;
+    --c: #02020200;
+    --_c: #02020200 66%, #4e4e50 68% 10%, #46424200 72%;
+    background:
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+        repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c) !important;
+    background-attachment: fixed;
+    /* background-color: #FFFFFF; */
+    margin-top: 5%;
+    box-shadow: rgba(5, 5, 5, 0.35) 0px -50px 36px -28px inset;
+    border: .60rem solid var(--gold);
+}
