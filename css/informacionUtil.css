@@ -45,3 +45,7 @@ body {
     background-color: #f6f6f9 !important;
 }
 
+.card {
+    background-color: gold;
+    border-radius: 10px;
+}

@@ -33,6 +33,11 @@ body {
     background-color: #FFD601;
 }
 
+.card {
+    background-color: gold;
+    border-radius: 10px;
+}
+
 .img-hw {
     height: 11rem;
     width: 11rem;
